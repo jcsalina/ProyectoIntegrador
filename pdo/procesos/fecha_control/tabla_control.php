@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $tabla_sin_datos =  "<tr>".
                         "<td colspan='19'>No hay datos</td>".
                     "</tr>";
@@ -161,7 +161,7 @@ if(isset($_GET['cedula'])){
     }
 
     if(isset($_POST['pentavalente1']) && $_POST['pentavalente1']=="1") {
-        $actualizar_control->bindParam(":pentavalente1", NULL); // POST value
+        //$actualizar_control->bindParam(":pentavalente1", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":pentavalente1", $_POST['pentavalente1']); // Base value
     }
