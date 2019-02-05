@@ -1,0 +1,53 @@
+.form-group {
+    height: 60px;
+}
+.form-group .validation-error {
+    font-size: 10px;
+    display: flex;
+}
+
+.form-group .req-mark {
+    font-size: 10px;
+    vertical-align: top;
+    margin-left: 2px;
+}
+
+.no-spacing {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.no-margin {
+    margin: 0 !important;
+}
+
+.search-form-group .search-control {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-right: 0px;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-form-group .btn {
+    border-radius: 0 4px 4px 0;
+}
+
+.new-instance-fix-btn {
+    display: block;
+    margin-right: 7px;
+}
+
+.cardbox {
+    background-color: #17c0c3 !important;
+}
+.cardbox:hover {
+    background-color: #222d32 !important;
+}
