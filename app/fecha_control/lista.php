@@ -248,7 +248,7 @@
                             <div class="panel panel-bd lobidrag">
                                 <div class="panel-body">
                                     <!-- Form Registrar Empleado -->
-									//hhh
+									
                                   
                                 </div>
                             </div>
