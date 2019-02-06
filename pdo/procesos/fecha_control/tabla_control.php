@@ -215,7 +215,7 @@ if(isset($_GET['cedula'])){
     }
 
     if(isset($_POST['SR']) && $_POST['SR']=="1") {
-        $actualizar_control->bindParam(":SR", NULL); // POST value
+        $actualizar_control->bindParam(":SR", null); // POST value
     } else {
         $actualizar_control->bindParam(":SR", $_POST['SR']); // Base value
     }
@@ -246,6 +246,7 @@ if(isset($_GET['cedula'])){
 
     if(isset($_POST['Influenza']) && $_POST['Influenza']=="1") {
         $actualizar_control->bindParam(":Influenza", NULL); // POST value
+		$errormsg_fechacontrol = "aqui me quedo";
     } else {
         $actualizar_control->bindParam(":Influenza", $_POST['Influenza']); // Base value
     }   
