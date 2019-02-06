@@ -63,9 +63,9 @@
                                             <tr class="info"> 
                                                 <th>Nombre</th>
                                                 <th>Cantidad</th>
-                                                <th>Calibre</th>
-                                                <th>Lote</th>
-                                                <th>Estado</th>
+                                                <th>Lotee</th>
+                                                <th>Fecha Ingreso</th>
+                                                <th>Fecha Expiracion</th>
                                                 <th>Editar</th>
                                             </tr>
                                         </thead>

@@ -82,22 +82,28 @@
                                     <table class="table table-bordered table-hover">
                                         <thead class="success">
                                             <tr>
+                                                <th colspan="20">Datos de las personas Vacunadas</th>
+                                                <th colspan="14">Administrar Vacuna</th>
+                                            </tr>
+                                            <tr>
                                                 <th rowspan="2"> Nombre y Apellido </th>
                                                 <th rowspan="2"> Cédula </th>
-                                                <th rowspan="2">Fecha de Nacimiento</th>
                                                 <th colspan="2">Sexo</th>
                                                 <th colspan="2">Lugar de residencia habitual</th>
                                                 <th colspan="6">Nacionalidad</th>
                                                 <th colspan="8">Autoidentificacion etnica</th>
-                                                <th colspan="2">Dosis Unica</th>
-                                                <th colspan="4">Primera Dosis</th>
-                                                <th colspan="5">Segunda Dosis</th>
-                                                <th colspan="3">Tercera Dosis</th>
-                                                <th>Primera Dosis</th>
-                                                <th colspan="2">Dosis Unica</th>
-                                                <th>Segunda Dosis</th>
+                                                <th colspan="2">6 a 11 meses</th>
+                                                <th rowspan="2"> 1 año </th>
+                                                <th rowspan="2"> 2 años </th>
+                                                <th rowspan="2"> 3 años </th>
+                                                <th rowspan="2"> 4 años </th>
+                                                <th rowspan="2"> 65 años y más </th>
+                                                <th rowspan="2"> Embarazadas </th>
+                                                <th rowspan="2">Puerperas </th>
+                                                <th rowspan="2">Personal de Salud</th>
+                                                <th colspan="4">Enfermos de 5 a 64 años</th>
                                             </tr>
-                                                <tr>
+                                            <tr>
                                                 <th>Hombre</th>
                                                 <th>Mujer</th>
                                                 <th>Pertenece Distrito</th>
@@ -116,30 +122,16 @@
                                                 <th>Mestizo/a</th>
                                                 <th>Blanco/a</th>
                                                 <th>Otro</th>
-                                                <th>BCG</th>
-                                                <th>HBO</th>
-                                                <th>Rotavirus 1</th>
-                                                <th>Rotavirus 2</th>
-                                                <th>Pentavalente 1</th>
-                                                <th>Pentavalente 2</th>
-                                                <th>Pentavalente 3</th>
-                                                <th>Poliomielitis 1</th>
-                                                <th>Poliomielitis 2</th>
-                                                <th>Poliomielitis 3</th>
-                                                <th>Neumococo 1</th>
-                                                <th>Neumococo 2</th>
-                                                <th>Neumococo 3</th>
-                                                <th>SR</th>
-                                                <th>SRP</th>
-                                                <th>Varicela</th>
-                                                <th>FA</th>
-                                                <th>OPV</th>
-                                                <th>Influenza</th>
-                                                <th>Nacionalidad / Etnia</th>
+                                                <th>1.- Dosis</th>
+                                                <th>2.- Dosis</th>
+                                                <th>5 a 9 años</th>
+                                                <th>10 a 19 años</th>
+                                                <th>20 a 49 años</th>
+                                                <th>50 a 64 años</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php require '../../pdo/procesos/repor/listar.php';?>
+                                            <?php require '../../pdo/procesos/repor/listar1.php';?>
                                         </tbody>
                                     </table>
                                 </div>

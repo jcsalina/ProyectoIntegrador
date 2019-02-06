@@ -202,7 +202,7 @@
                                     <div class="table-responsive">
                                         <table class="table table-bordered table-hover">
                                             <thead class="success">
-                                                <tr>
+                                                <tr class="info">>
                                                     <th>Fecha de Cita</th>
                                                     <th>Estado</th>
                                                 </tr>

@@ -60,12 +60,13 @@
                                 <div class="table-responsive">
                                     <table class="table table-bordered table-hover">
                                         <thead class="success">
-                                            <tr>
+                                            <tr class="info">
                                                 <th>Nombre</th>
-                                                <th>Cantidad</th>
-                                                <th>Tipo</th>
                                                 <th>Lote</th>
-                                                <th>Estado</th>
+                                                <th>Cantidad</th>
+                                                <th>Dosis</th>
+                                                <th>Fecha Ingreso</th>
+                                                <th>Fecha Expiracion</th>
                                                 <th>Editar</th>
                                             </tr>
                                         </thead>

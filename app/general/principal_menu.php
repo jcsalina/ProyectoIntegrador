@@ -118,7 +118,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="/ProyectoIntegrador/app/repor/lista.php">Reporte 1</a></li>
-                    <li><a href="/ProyectoIntegrador/app/reporte/reporte2.php">Reporte 2</a></li>
+                    <li><a href="/ProyectoIntegrador/app/repor/lista1.php">Reporte 2</a></li>
                 </ul>
             </li> 
         </ul>

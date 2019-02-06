@@ -91,7 +91,7 @@
                                         </thead>
                                         <tbody>
                                         <?php
-                                                include "../../pdo/procesos/citamedica/listar.php";
+                                                include "../../pdo/procesos/citamedica/listar1.php";
                                         ?>
                                             
                                         </tbody>
