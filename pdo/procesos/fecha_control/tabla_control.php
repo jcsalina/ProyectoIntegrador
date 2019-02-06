@@ -149,7 +149,7 @@ if(isset($_GET['cedula'])){
     }
 
     if(isset($_POST['rotavirus1']) && $_POST['rotavirus1']=="1") {
-        $actualizar_control->bindParam(":rotavirus1", NULL); // POST value
+        $actualizar_control->bindParam(":rotavirus1", 0000-00-00); // POST value
     } else {
         $actualizar_control->bindParam(":rotavirus1", $_POST['rotavirus1']); // Base value
     }
