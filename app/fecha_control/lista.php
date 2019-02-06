@@ -248,7 +248,8 @@
                             <div class="panel panel-bd lobidrag">
                                 <div class="panel-body">
                                     <!-- Form Registrar Empleado -->
-                                    <?php include 'registrar_form.php';?>
+									//hhh
+                                  
                                 </div>
                             </div>
                             
