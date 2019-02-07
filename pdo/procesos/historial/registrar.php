@@ -8,7 +8,7 @@ $fecha_now = $newdate;
 
 
 function contar_citas_de_fecha($fecha_consulta) {
-    $pdo2 = new PDO('mysql:host=localhost;dbname=proyectoministerio','ministerio','12345678');
+    $pdo2 = new PDO('mysql:host=localhost;dbname=proyectoministerio','root','');
     $consultar_numero_citas = $pdo2->prepare("SELECT COUNT(*)
                                              FROM agendamiento
                                              WHERE fecha_cita =".$fecha_consulta)->fetchColumn();
@@ -18,7 +18,7 @@ function contar_citas_de_fecha($fecha_consulta) {
 };
 
 function agendar_nueva_cita($paciente_id, $fecha_cita) {
-    $pdo2 = new PDO('mysql:host=localhost;dbname=proyectoministerio','ministerio','12345678');
+    $pdo2 = new PDO('mysql:host=localhost;dbname=proyectoministerio','root','');
     $agendamiento = $pdo2->prepare("INSERT INTO agendamiento(paciente_id, fecha_cita, estado)
                                    VALUES (:paciente_id, :fecha_agendamiento, 'Agendada')");
     $agendamiento->bindParam(":paciente_id", $paciente_id);

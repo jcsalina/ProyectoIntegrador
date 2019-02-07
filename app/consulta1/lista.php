@@ -56,15 +56,22 @@
                                 
                                 <?php
                                     $fecha_cita = '';
+                                    $fecha_cita_hasta = '';
                                     if(isset($_GET['fecha_cita'])){
                                         $fecha_cita = $_GET['fecha_cita'];
+                                        $fecha_cita_hasta = $_GET['fecha_cita_hasta'];
                                     }
                                 ?>
                                 <!-- Search Form Group -->
                                 <form action="lista.php" method="GET">
-                                    <div class="btn-group col-sm-4 no-padding" style="margin-left:7px;">
+                                    <div class="btn-group col-sm-8 no-padding" style="margin-left:7px;">
                                         <div class="search-form-group col-md-12 no-padding">
-                                            <input type="date" name="fecha_cita" id="fecha_cita" class="search-control col-md-8" placeholder="Ingrese Fecha" value="<?php echo $fecha_cita ?>">
+                                            <div class="col-md-4 no-padding">Desde</div>
+                                            <div class="col-md-4 no-padding">Hasta</div>
+                                        </div>
+                                        <div class="search-form-group col-md-12 no-padding">
+                                            <input type="date" name="fecha_cita" id="fecha_cita" class="search-control col-md-4" placeholder="Ingrese Fecha" value="<?php echo $fecha_cita ?>">
+                                            <input type="date" name="fecha_cita_hasta" id="fecha_cita_hasta" class="search-control col-md-4" placeholder="Ingrese Fecha" value="<?php echo $fecha_cita_hasta ?>">
                                             <input type="submit" class="btn btn-success col-md-4" value="Buscar">
                                         </div>
                                     </div>

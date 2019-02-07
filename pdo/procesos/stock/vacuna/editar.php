@@ -5,10 +5,15 @@
     if (isset($_POST['registrar_form'])) {
         $nombre           = $_POST['nombre'];
         $cantidad         = (int)$_POST['cantidad'];
-        $tipo             = $_POST['tipo'];
+        $dosis         = (int)$_POST['dosis'];
         $lote             = (int)$_POST['lote'];
         $fecha_ingreso    = $_POST['fecha_ingreso'];
         $fecha_expiracion = $_POST['fecha_expiracion'];
+        if($_POST)
+        {	
+            $cantidad_total   = $dosis * $cantidad ;
+            $stock_actual = $cantidad_total; 
+        }
 
         $vacuna_actualizar = $pdo->prepare("UPDATE vacuna 
                                             SET nombre=:nombre, tipo=:tipo, estado='1'
@@ -19,10 +24,13 @@
         // $vacuna_actualizar->execute();
 
         $stockvacuna_actualizar = $pdo->prepare("UPDATE stockvacuna 
-                                                 SET lote=:lote, cantidad=:cantidad, fecha_ingreso=:fecha_ingreso, fecha_expiracion=:fecha_expiracion
+                                                 SET lote=:lote, dosis=:dosis, cantidad=:cantidad, dosis=:dosis, cantidad_total=:cantidad_total, stock_actual=:stock_actual, fecha_ingreso=:fecha_ingreso, fecha_expiracion=:fecha_expiracion
                                                  WHERE id_vacuna=:id_vacuna");
         $stockvacuna_actualizar->bindParam(":lote", $lote);
+        $stockvacuna_actualizar->bindParam(":dosis", $dosis);
         $stockvacuna_actualizar->bindParam(":cantidad", $cantidad);
+        $stockvacuna_actualizar->bindParam(":cantidad_total", $cantidad_total);
+        $stockvacuna_actualizar->bindParam(":stock_actual", $stock_actual);
         $stockvacuna_actualizar->bindParam(":fecha_ingreso", $fecha_ingreso);
         $stockvacuna_actualizar->bindParam(":fecha_expiracion", $fecha_expiracion);
         $stockvacuna_actualizar->bindParam(":id_vacuna", $id_vacuna);
@@ -50,10 +58,11 @@
                                     vacuna.estado AS vacuna_estado, 
                                     stockvacuna.cantidad AS vacuna_cantidad,
                                     stockvacuna.lote AS vacuna_lote, 
+                                    stockvacuna.dosis AS vacuna_dosis, 
                                     stockvacuna.fecha_ingreso AS vacuna_fecha_ingreso,
                                     stockvacuna.fecha_expiracion AS vacuna_fecha_expiracion
-                                FROM vacuna 
-                                LEFT JOIN stockvacuna
+                                FROM stockvacuna
+                                LEFT JOIN vacuna
                                     ON stockvacuna.id_vacuna = vacuna.id
                                 WHERE vacuna.id=:id_vacuna");
     $vacuna->bindParam(":id_vacuna", $id_vacuna);
@@ -69,15 +78,15 @@
     
         <form class="col-sm-12" role="form" action="" method="post" name="signupform">
             <input type="hidden" name="id" value=' . $fila_ins["vacuna_id"] . '>
-            <div class="col-sm-6 form-group">
+            <div class="col-sm-12 form-group">
                 <label>Nombre<span class="text-danger req-mark">*</span></label>
                 <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese nombre" value=' . $fila_ins["vacuna_nombre"] . '>
                 <span class="text-danger validation-error"><?php if (isset($nombre_error)) echo $nombre_error; ?></span>
             </div>
             <div class="col-sm-6 form-group">
-                <label>Tipo<span class="text-danger req-mark">*</span></label>
-                <input type="text" name="tipo" id="tipo" class="form-control" placeholder="Ingrese tipo" value=' . $fila_ins["vacuna_tipo"] . '>
-                <span class="text-danger validation-error"><?php if (isset($tipo_error)) echo $tipo_error; ?></span>
+                <label>Dosis<span class="text-danger req-mark">*</span></label>
+                <input type="number" name="dosis" id="dosis" class="form-control" placeholder="Ingrese dosis" value=' . $fila_ins["vacuna_dosis"] . '>
+                <span class="text-danger validation-error"><?php if (isset($cantidad_error)) echo $cantidad_error; ?></span>
             </div>
             <div class="col-sm-6 form-group">
                 <label>Cantidad<span class="text-danger req-mark">*</span></label>

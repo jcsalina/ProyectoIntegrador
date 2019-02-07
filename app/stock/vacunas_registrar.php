@@ -58,7 +58,7 @@
                             <div class="panel-body">
                                 <!-- Form Registrar Vacuna -->
                                 <?php require_once "../../pdo/php/connect.php";?>
-                                <?php include '../../app/stock/vacunas_registrar_form.php';?>
+                                <?php include '../../app/stock/vacunas_registrar_form1.php';?>
                             </div>
                         </div>
                     </div>

@@ -63,8 +63,10 @@
                                             <tr class="info">
                                                 <th>Nombre</th>
                                                 <th>Lote</th>
-                                                <th>Cantidad</th>
-                                                <th>Dosis</th>
+                                                <th>Cantidad de Frascos</th>
+                                                <th>Dosis por Frasco </th>
+                                                <th>Cantidad Total de Dosis</th>
+                                                <th>Saldo Stock Actual</th>
                                                 <th>Fecha Ingreso</th>
                                                 <th>Fecha Expiracion</th>
                                                 <th>Editar</th>

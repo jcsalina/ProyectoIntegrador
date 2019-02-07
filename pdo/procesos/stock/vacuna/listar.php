@@ -3,10 +3,12 @@
                                     vacuna.id AS vacuna_id, 
                                     vacuna.nombre AS vacuna_nombre, 
                                     vacuna.tipo AS vacuna_tipo, 
-                                    vacuna.dosis AS vacuna_dosis,
+                                    stockvacuna.dosis AS vacuna_dosis,
                                     vacuna.estado AS vacuna_estado, 
                                     stockvacuna.cantidad AS vacuna_cantidad,
                                     stockvacuna.lote AS vacuna_lote, 
+                                    stockvacuna.cantidad_total AS vacuna_cantidad_total, 
+                                    stockvacuna.stock_actual AS vacuna_stock_actual, 
                                     stockvacuna.fecha_ingreso AS vacuna_fecha_ingreso,
                                     stockvacuna.fecha_expiracion AS vacuna_fecha_expiracion
                                   FROM stockvacuna
@@ -23,6 +25,8 @@
                                 "<td>" . $fila['vacuna_lote'] . "</td>".
                                 "<td>" . $fila['vacuna_cantidad'] . "</td>".
                                 "<td>" . $fila['vacuna_dosis'] . "</td>".
+                                "<td>" . $fila['vacuna_cantidad_total'] . "</td>".
+                                "<td>" . $fila['vacuna_stock_actual'] . "</td>".
                                 "<td>" . $fila['vacuna_fecha_ingreso'] . "</td>".
                                 "<td>" . $fila['vacuna_fecha_expiracion'] . "</td>".
                                 "<td>" .
