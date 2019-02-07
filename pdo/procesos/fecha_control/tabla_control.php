@@ -137,19 +137,19 @@ if(isset($_GET['cedula'])){
 
     // Control
     if(isset($_POST['BCG']) && $_POST['BCG']=="1") {
-        //$actualizar_control->bindParam(":BCG", NULL); // POST value
+       $actualizar_control->bindParam(":BCG", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":BCG", $_POST['BCG']); // Base value
     }
 
     if(isset($_POST['HBO']) && $_POST['HBO']=="1") {
-        //$actualizar_control->bindParam(":HBO", NULL); // POST value
+        $actualizar_control->bindParam(":HBO", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":HBO", $_POST['HBO']); // Base value
     }
 
     if(isset($_POST['rotavirus1']) && $_POST['rotavirus1']=="1") {
-        //$actualizar_control->bindParam(":rotavirus1", NULL); // POSTULL value
+        $actualizar_control->bindParam(":rotavirus1", NULL); // POSTULL value
     } else {
         $actualizar_control->bindParam(":rotavirus1", $_POST['rotavirus1']); // Base value
     }
