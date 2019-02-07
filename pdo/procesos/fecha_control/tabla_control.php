@@ -136,8 +136,8 @@ if(isset($_GET['cedula'])){
 
 
     // Control
-    if(isset($_POST['BCG']) /*&& $_POST['BCG']=="1"*/) {
-       $actualizar_control->bindParam(":BCG", NULL); // POST value
+    if(isset($_POST['BCG']) && $_POST['BCG']=="1") {
+        $actualizar_control->bindParam(":BCG", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":BCG", $_POST['BCG']); // Base value
     }
@@ -166,86 +166,86 @@ if(isset($_GET['cedula'])){
         $actualizar_control->bindParam(":pentavalente1", $_POST['pentavalente1']); // Base value
     }
 
-    if(isset($_POST['pentavalente2']) && $_POST['pentavalente2']=="0") {
+    if(isset($_POST['pentavalente2']) && $_POST['pentavalente2']=="1") {
         $actualizar_control->bindParam(":pentavalente2", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":pentavalente2", $_POST['pentavalente2']); // Base value
     }
 
     if(isset($_POST['pentavalente3']) && $_POST['pentavalente3']=="1") {
-        //$actualizar_control->bindParam(":pentavalente3", NULL); // POST value
+        $actualizar_control->bindParam(":pentavalente3", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":pentavalente3", $_POST['pentavalente3']); // Base value
     }
 
     if(isset($_POST['poliomielitis1']) && $_POST['poliomielitis1']=="1") {
-        //$actualizar_control->bindParam(":poliomielitis1", NULL); // POST value
+        $actualizar_control->bindParam(":poliomielitis1", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":poliomielitis1", $_POST['poliomielitis1']); // Base value
     }
 
     if(isset($_POST['poliomielitis2']) && $_POST['poliomielitis2']=="1") {
-        //$actualizar_control->bindParam(":poliomielitis2", NULL); // POST value
+        $actualizar_control->bindParam(":poliomielitis2", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":poliomielitis2", $_POST['poliomielitis2']); // Base value
     }
 
     if(isset($_POST['poliomielitis3']) && $_POST['poliomielitis3']=="1") {
-        //$actualizar_control->bindParam(":poliomielitis3", NULL); // POST value
+        $actualizar_control->bindParam(":poliomielitis3", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":poliomielitis3", $_POST['poliomielitis3']); // Base value
     }
 
     if(isset($_POST['neumococo1']) && $_POST['neumococo1']=="1") {
-        //$actualizar_control->bindParam(":neumococo1", NULL); // POST value
+        $actualizar_control->bindParam(":neumococo1", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":neumococo1", $_POST['neumococo1']); // Base value
     }
 
     if(isset($_POST['neumococo2']) && $_POST['neumococo2']=="1") {
-        //$actualizar_control->bindParam(":neumococo2", NULL); // POST value
+        $actualizar_control->bindParam(":neumococo2", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":neumococo2", $_POST['neumococo2']); // Base value
     }
 
     if(isset($_POST['neumococo3']) && $_POST['neumococo3']=="1") {
-        //$actualizar_control->bindParam(":neumococo3", NULL); // POST value
+        $actualizar_control->bindParam(":neumococo3", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":neumococo3", $_POST['neumococo3']); // Base value
     }
 
     if(isset($_POST['SR']) && $_POST['SR']=="1") {
-        //$actualizar_control->bindParam(":SR", null); // POST value
+        $actualizar_control->bindParam(":SR", null); // POST value
     } else {
         $actualizar_control->bindParam(":SR", $_POST['SR']); // Base value
     }
 
     if(isset($_POST['SRP']) && $_POST['SRP']=="1") {
-        //$actualizar_control->bindParam(":SRP", NULL); // POST value
+        $actualizar_control->bindParam(":SRP", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":SRP", $_POST['SRP']); // Base value
     }
 
     if(isset($_POST['varicela']) && $_POST['varicela']=="1") {
-        //$actualizar_control->bindParam(":varicela", NULL); // POST value
+        $actualizar_control->bindParam(":varicela", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":varicela", $_POST['varicela']); // Base value
     }
 
     if(isset($_POST['FA']) && $_POST['FA']=="1") {
-        //$actualizar_control->bindParam(":FA", NULL); // POST value
+        $actualizar_control->bindParam(":FA", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":FA", $_POST['FA']); // Base value
     }
 
     if(isset($_POST['OPV']) && $_POST['OPV']=="1") {
-        //$actualizar_control->bindParam(":OPV", NULL); // POST value
+        $actualizar_control->bindParam(":OPV", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":OPV", $_POST['OPV']); // Base value
     }
 
     if(isset($_POST['Influenza']) && $_POST['Influenza']=="1") {
-        //$actualizar_control->bindParam(":Influenza", NULL); // POST value
+        $actualizar_control->bindParam(":Influenza", NULL); // POST value
 		$errormsg_fechacontrol = "aqui me quedo";
     } else {
         $actualizar_control->bindParam(":Influenza", $_POST['Influenza']); // Base value
