@@ -66,7 +66,7 @@ if(isset($_GET['cedula'])){
 
             // Fechas
             $tabla .= "";
-            if ($fila["BCG"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["BCG"] . "</td>";  }
+/*            if ($fila["BCG"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["BCG"] . "</td>";  }
             if (isset($fila["HBO"])) {              $tabla .= "<td>" . $fila["HBO"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["rotavirus1"])) {       $tabla .= "<td>" . $fila["rotavirus1"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["rotavirus2"])) {       $tabla .= "<td>" . $fila["rotavirus2"] . "</td>"; } else { $tabla .= "<td></td>"; }
@@ -75,8 +75,17 @@ if(isset($_GET['cedula'])){
             if (isset($fila["pentavalente3"])) {    $tabla .= "<td>" . $fila["pentavalente3"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["poliomielitis1"])) {   $tabla .= "<td>" . $fila["poliomielitis1"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["poliomielitis2"])) {   $tabla .= "<td>" . $fila["poliomielitis2"] . "</td>"; } else { $tabla .= "<td></td>"; }
-            //if (isset($fila["poliomielitis3"])) {   $tabla .= "<td>" . $fila["poliomielitis3"] . "</td>"; } else { $tabla .= "<td></td>"; }
-            if ($fila["poliomielitis3"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["BCG"] . "</td>";  }     
+            if (isset($fila["poliomielitis3"])) {   $tabla .= "<td>" . $fila["poliomielitis3"] . "</td>"; } else { $tabla .= "<td></td>"; }*/
+            if ($fila["BCG"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["BCG"] . "</td>";  }     
+            if ($fila["HBO"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["HBO"] . "</td>";  }     
+            if ($fila["rotavirus1"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["rotavirus1"] . "</td>";  }     
+            if ($fila["rotavirus2"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["rotavirus2"] . "</td>";  }     
+            if ($fila["pentavalente1"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["pentavalente1"] . "</td>";  }     
+            if ($fila["pentavalente2"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["pentavalente2"] . "</td>";  }     
+            if ($fila["pentavalente3"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["pentavalente3"] . "</td>";  }     
+            if ($fila["poliomielitis1"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["poliomielitis1"] . "</td>";  }     
+            if ($fila["poliomielitis2"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["poliomielitis2"] . "</td>";  }     
+            if ($fila["poliomielitis3"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["poliomielitis3"] . "</td>";  }     
             $tabla .= "</tr>";
 
             echo $tabla;
