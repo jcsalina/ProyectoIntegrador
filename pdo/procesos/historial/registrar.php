@@ -2,7 +2,7 @@
 $fecha_hora_now = date('Y-m-d H:i:s');
 $fecha_hoy = date('Y-m-d');
 
-$newdate = strtotime ( '-1 day' , strtotime ( $fecha_hoy ) ) ;
+$newdate = strtotime ( ' day' , strtotime ( $fecha_hoy ) ) ;
 $newdate = date ( 'Y-m-j' , $newdate );
 $fecha_now = $newdate;
 
@@ -56,8 +56,8 @@ if (isset($_POST['submit_historial'])) {
     $pentavalente1  = isset($_POST["pentavalente1"]) ? $fecha_now : NULL;
     $pentavalente2  = isset($_POST["pentavalente2"]) ? $fecha_now : NULL;
     $pentavalente3  = isset($_POST["pentavalente3"]) ? $fecha_now : NULL;
-    //$poliomielitis1 = isset($_POST["poliomielitis1"]) ? $fecha_now : NULL;
-    $poliomielitis1 = $_POST["poliomielitis1"]=="0000-00-00" ?  NULL: $fecha_now ;
+    $poliomielitis1 = empty($_POST["poliomielitis1"]) ? $fecha_now : NULL;
+    //$poliomielitis1 = $_POST["poliomielitis1"]=="0000-00-00" ?  NULL: $fecha_now ;
     $poliomielitis2 = isset($_POST["poliomielitis2"]) ? $fecha_now : NULL;
     $poliomielitis3 = isset($_POST["poliomielitis3"]) ? $fecha_now : NULL;
     $neumococo1     = isset($_POST["neumococo1"]) ? $fecha_now : NULL;
