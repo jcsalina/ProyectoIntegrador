@@ -27,26 +27,16 @@ if(isset($_GET['cedula'])){
         while($fila=$control_lista->fetch()){
 
 
-            /*if (isset($fila["BCG"])) {            $checkbox_BCG = "checked='checked' value='1' onclick='return true'";            } else { $checkbox_BCG = "value='0'"; }              
+            if (isset($fila["BCG"])) {            $checkbox_BCG = "checked='checked' value='1' onclick='return false'";            } else { $checkbox_BCG = "value='0'"; }              
             if (isset($fila["HBO"])) {            $checkbox_HBO = "checked='checked' value='1' onclick='return false'";            } else { $checkbox_HBO = "value='0'"; }              
-            if (isset($fila["rotavirus1"])) {     $checkbox_rotavirus1 = "checked='checked' value='1' onclick='return true'";     } else { $checkbox_rotavirus1 = "value='0'"; }       
+            if (isset($fila["rotavirus1"])) {     $checkbox_rotavirus1 = "checked='checked' value='1' onclick='return false'";     } else { $checkbox_rotavirus1 = "value='0'"; }       
             if (isset($fila["rotavirus2"])) {     $checkbox_rotavirus2 = "checked='checked' value='1' onclick='return false'";     } else { $checkbox_rotavirus2 = "value='0'"; }       
             if (isset($fila["pentavalente1"])) {  $checkbox_pentavalente1 = "checked='checked' value='1' onclick='return false'";  } else { $checkbox_pentavalente1 = "value='0'"; }    
             if (isset($fila["pentavalente2"])) {  $checkbox_pentavalente2 = "checked='checked' value='1' onclick='return false'";  } else { $checkbox_pentavalente2 = "value='0'"; }    
             if (isset($fila["pentavalente3"])) {  $checkbox_pentavalente3 = "checked='checked' value='1' onclick='return false'";  } else { $checkbox_pentavalente3 = "value='0'"; }    
             if (isset($fila["poliomielitis1"])) { $checkbox_poliomielitis1 = "checked='checked' value='1' onclick='return false'"; } else { $checkbox_poliomielitis1 = "value='0'"; }   
-            if (isset($fila["poliomielitis2"])) { $checkbox_poliomielitis2 = "checked='checked' value='1' onclick='return false'"; } else { $checkbox_poliomielitis2 = "value='0'"; }*/   
-			if ($fila["BCG"]=="0000-00-00") { $checkbox_BCG= "value='0'";} else { $checkbox_BCG = "checked='checked' value='1' onclick='return false'";  }   
-			if ($fila["HBO"]=="0000-00-00") { $checkbox_HBO= "value='0'";} else { $checkbox_HBO= "checked='checked' value='1' onclick='return false'";  }   
-			if ($fila["rotavirus1"]=="0000-00-00") { $checkbox_rotavirus1 = "value='0'";} else { $checkbox_rotavirus1= "checked='checked' value='1' onclick='return false'";  }   
-			if ($fila["rotavirus2"]=="0000-00-00") { $checkbox_rotavirus2 = "value='0'";} else { $checkbox_rotavirus2 = "checked='checked' value='1' onclick='return false'";  }   
-			if ($fila["pentavalente1"]=="0000-00-00") { $checkbox_pentavalente1 = "value='0'";} else { $checkbox_pentavalente1 = "checked='checked' value='1' onclick='return false'";  }   
-			if ($fila["pentavalente2"]=="0000-00-00") { $checkbox_pentavalente2 = "value='0'";} else { $checkbox_pentavalente2 = "checked='checked' value='1' onclick='return false'";  }   
-			if ($fila["pentavalente3"]=="0000-00-00") { $checkbox_pentavalente3 = "value='0'";} else { $checkbox_pentavalente3 = "checked='checked' value='1' onclick='return false'";  }   
-			if ($fila["poliomielitis1"]=="0000-00-00") { $checkbox_poliomielitis1 = "value='0'";} else { $checkbox_poliomielitis1 = "checked='checked' value='1' onclick='return false'";  }              
-			if ($fila["poliomielitis2"]=="0000-00-00") { $checkbox_poliomielitis2 = "value='0'";} else { $checkbox_poliomielitis2 = "checked='checked' value='1' onclick='return false'";  }   
-            if ($fila["poliomielitis3"]=="0000-00-00") { $checkbox_poliomielitis3 = "value='0'";} else { $checkbox_poliomielitis3 = "checked='checked' value='1' onclick='return false'";  }   
-            //if (isset($fila["poliomielitis3"])) { $checkbox_poliomielitis3 = "checked='checked' value='1' onclick='return false'"; } else { $checkbox_poliomielitis3 = "value='0'"; }   
+            if (isset($fila["poliomielitis2"])) { $checkbox_poliomielitis2 = "checked='checked' value='1' onclick='return false'"; } else { $checkbox_poliomielitis2 = "value='0'"; }   
+            if (isset($fila["poliomielitis3"])) { $checkbox_poliomielitis3 = "checked='checked' value='1' onclick='return false'"; } else { $checkbox_poliomielitis3 = "value='0'"; }   
             
 
             $tabla = "<tr>";
@@ -66,7 +56,7 @@ if(isset($_GET['cedula'])){
 
             // Fechas
             $tabla .= "";
-/*            if ($fila["BCG"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["BCG"] . "</td>";  }
+            if (isset($fila["BCG"])) {              $tabla .= "<td>" . $fila["BCG"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["HBO"])) {              $tabla .= "<td>" . $fila["HBO"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["rotavirus1"])) {       $tabla .= "<td>" . $fila["rotavirus1"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["rotavirus2"])) {       $tabla .= "<td>" . $fila["rotavirus2"] . "</td>"; } else { $tabla .= "<td></td>"; }
@@ -75,17 +65,8 @@ if(isset($_GET['cedula'])){
             if (isset($fila["pentavalente3"])) {    $tabla .= "<td>" . $fila["pentavalente3"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["poliomielitis1"])) {   $tabla .= "<td>" . $fila["poliomielitis1"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["poliomielitis2"])) {   $tabla .= "<td>" . $fila["poliomielitis2"] . "</td>"; } else { $tabla .= "<td></td>"; }
-            if (isset($fila["poliomielitis3"])) {   $tabla .= "<td>" . $fila["poliomielitis3"] . "</td>"; } else { $tabla .= "<td></td>"; }*/
-            if ($fila["BCG"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["BCG"] . "</td>";  }     
-            if ($fila["HBO"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["HBO"] . "</td>";  }     
-            if ($fila["rotavirus1"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["rotavirus1"] . "</td>";  }     
-            if ($fila["rotavirus2"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["rotavirus2"] . "</td>";  }     
-            if ($fila["pentavalente1"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["pentavalente1"] . "</td>";  }     
-            if ($fila["pentavalente2"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["pentavalente2"] . "</td>";  }     
-            if ($fila["pentavalente3"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["pentavalente3"] . "</td>";  }     
-            if ($fila["poliomielitis1"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["poliomielitis1"] . "</td>";  }     
-            if ($fila["poliomielitis2"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["poliomielitis2"] . "</td>";  }     
-            if ($fila["poliomielitis3"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["poliomielitis3"] . "</td>";  }     
+            if (isset($fila["poliomielitis3"])) {   $tabla .= "<td>" . $fila["poliomielitis3"] . "</td>"; } else { $tabla .= "<td></td>"; }
+                 
             $tabla .= "</tr>";
 
             echo $tabla;
