@@ -27,7 +27,7 @@ if(isset($_GET['cedula'])){
         while($fila=$control_lista->fetch()){
 
 
-            if (isset($fila["BCG"])&& $fila["BCG"]=="2019-02-05") {            $checkbox_BCG = "checked='checked' value='1' onclick='return true'";            } else { $checkbox_BCG = "value='0'"; }              
+            if (isset($fila["BCG"])) {            $checkbox_BCG = "checked='checked' value='1' onclick='return true'";            } else { $checkbox_BCG = "value='0'"; }              
             if (isset($fila["HBO"])) {            $checkbox_HBO = "checked='checked' value='1' onclick='return false'";            } else { $checkbox_HBO = "value='0'"; }              
             if (isset($fila["rotavirus1"])) {     $checkbox_rotavirus1 = "checked='checked' value='1' onclick='return true'";     } else { $checkbox_rotavirus1 = "value='0'"; }       
             if (isset($fila["rotavirus2"])) {     $checkbox_rotavirus2 = "checked='checked' value='1' onclick='return false'";     } else { $checkbox_rotavirus2 = "value='0'"; }       
@@ -56,7 +56,7 @@ if(isset($_GET['cedula'])){
 
             // Fechas
             $tabla .= "";
-            if (isset($fila["BCG"])) {              $tabla .= "<td>" . $fila["BCG"] . "</td>"; } else { $tabla .= "<td></td>"; }
+            if ($fila["BCG"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["BCG"] . "</td>";  }
             if (isset($fila["HBO"])) {              $tabla .= "<td>" . $fila["HBO"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["rotavirus1"])) {       $tabla .= "<td>" . $fila["rotavirus1"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["rotavirus2"])) {       $tabla .= "<td>" . $fila["rotavirus2"] . "</td>"; } else { $tabla .= "<td></td>"; }
@@ -65,8 +65,8 @@ if(isset($_GET['cedula'])){
             if (isset($fila["pentavalente3"])) {    $tabla .= "<td>" . $fila["pentavalente3"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["poliomielitis1"])) {   $tabla .= "<td>" . $fila["poliomielitis1"] . "</td>"; } else { $tabla .= "<td></td>"; }
             if (isset($fila["poliomielitis2"])) {   $tabla .= "<td>" . $fila["poliomielitis2"] . "</td>"; } else { $tabla .= "<td></td>"; }
-            if (isset($fila["poliomielitis3"])) {   $tabla .= "<td>" . $fila["poliomielitis3"] . "</td>"; } else { $tabla .= "<td></td>"; }
-                 
+            //if (isset($fila["poliomielitis3"])) {   $tabla .= "<td>" . $fila["poliomielitis3"] . "</td>"; } else { $tabla .= "<td></td>"; }
+            if ($fila["poliomielitis3"]=="0000-00-00") {$tabla .= "<td></td>"; } else {$tabla .= "<td>" . $fila["BCG"] . "</td>";  }     
             $tabla .= "</tr>";
 
             echo $tabla;
