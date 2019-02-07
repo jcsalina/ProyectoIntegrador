@@ -57,7 +57,7 @@ if (isset($_POST['submit_historial'])) {
     $pentavalente2  = isset($_POST["pentavalente2"]) ? $fecha_now : NULL;
     $pentavalente3  = isset($_POST["pentavalente3"]) ? $fecha_now : NULL;
     //$poliomielitis1 = isset($_POST["poliomielitis1"]) ? $fecha_now : NULL;
-    $poliomielitis1 = $_POST["poliomielitis1"]=="0000-00-00" ? $fecha_now : NULL;
+    $poliomielitis1 = $_POST["poliomielitis1"]=="0000-00-00" ?  NULL: $fecha_now ;
     $poliomielitis2 = isset($_POST["poliomielitis2"]) ? $fecha_now : NULL;
     $poliomielitis3 = isset($_POST["poliomielitis3"]) ? $fecha_now : NULL;
     $neumococo1     = isset($_POST["neumococo1"]) ? $fecha_now : NULL;
