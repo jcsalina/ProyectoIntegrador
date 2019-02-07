@@ -29,7 +29,7 @@ if(isset($_GET['cedula'])){
 
             if (isset($fila["BCG"])) {            $checkbox_BCG = "checked='checked' value='1' onclick='return false'";            } else { $checkbox_BCG = "value='0'"; }              
             if (isset($fila["HBO"])) {            $checkbox_HBO = "checked='checked' value='1' onclick='return false'";            } else { $checkbox_HBO = "value='0'"; }              
-            if (isset($fila["rotavirus1"])) {     $checkbox_rotavirus1 = "checked='checked' value='1' onclick='return false'";     } else { $checkbox_rotavirus1 = "value='0'"; }       
+            if (isset($fila["rotavirus1"])) {     $checkbox_rotavirus1 = "checked='checked' value='1' onclick='return true'";     } else { $checkbox_rotavirus1 = "value='0'"; }       
             if (isset($fila["rotavirus2"])) {     $checkbox_rotavirus2 = "checked='checked' value='1' onclick='return false'";     } else { $checkbox_rotavirus2 = "value='0'"; }       
             if (isset($fila["pentavalente1"])) {  $checkbox_pentavalente1 = "checked='checked' value='1' onclick='return false'";  } else { $checkbox_pentavalente1 = "value='0'"; }    
             if (isset($fila["pentavalente2"])) {  $checkbox_pentavalente2 = "checked='checked' value='1' onclick='return false'";  } else { $checkbox_pentavalente2 = "value='0'"; }    
