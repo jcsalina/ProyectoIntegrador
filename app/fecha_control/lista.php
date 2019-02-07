@@ -165,10 +165,10 @@
                                                     <th>Rotavirus 2</th>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="date" name="BCG" id="BCG" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_BCG))?$control_BCG:'';?>"></td>
-                                                    <td><input type="date" name="HBO" id="HBO" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_HBO))?$control_HBO:'';?>"></td>
-                                                    <td><input type="date" name="rotavirus1" id="rotavirus1" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_rotavirus1))?$control_rotavirus1:'';?>"></td>
-                                                    <td><input type="date" name="rotavirus2" id="rotavirus2" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_rotavirus2))?$control_rotavirus2:'';?>"></td>
+                                                    <td><input type="date" name="BCG" id="BCG" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_BCG))?$control_BCG;?>"></td>
+                                                    <td><input type="date" name="HBO" id="HBO" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_HBO))?$control_HBO;?>"></td>
+                                                    <td><input type="date" name="rotavirus1" id="rotavirus1" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_rotavirus1))?$control_rotavirus1;?>"></td>
+                                                    <td><input type="date" name="rotavirus2" id="rotavirus2" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_rotavirus2))?$control_rotavirus2;?>"></td>
                                                 <tr class="info">
                                                     <th>Penta 1</th>
                                                     <th>Penta 2</th>
@@ -176,10 +176,10 @@
                                                     <th>Poliomielitis 1</th>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="date" name="pentavalente1" id="pentavalente1" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_pentavalente1))?$control_pentavalente1:'';?>"></td>
-                                                    <td><input type="date" name="pentavalente2" id="pentavalente2" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_pentavalente2))?$control_pentavalente2:'';?>"></td>
-                                                    <td><input type="date" name="pentavalente3" id="pentavalente3" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_pentavalente3))?$control_pentavalente3:'';?>"></td>
-                                                    <td><input type="date" name="poliomielitis1" id="poliomielitis1" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_poliomielitis1))?$control_poliomielitis1:'';?>"></td>
+                                                    <td><input type="date" name="pentavalente1" id="pentavalente1" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_pentavalente1))?$control_pentavalente1;?>"></td>
+                                                    <td><input type="date" name="pentavalente2" id="pentavalente2" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_pentavalente2))?$control_pentavalente2;?>"></td>
+                                                    <td><input type="date" name="pentavalente3" id="pentavalente3" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_pentavalente3))?$control_pentavalente3;?>"></td>
+                                                    <td><input type="date" name="poliomielitis1" id="poliomielitis1" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_poliomielitis1))?$control_poliomielitis1;?>"></td>
                                                 <tr class="info">
                                                     <th>Poliomielitis 2</th>
                                                     <th>Poliomielitis 3</th>
@@ -187,10 +187,10 @@
                                                     <th>Neumococo 2</th>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="date" name="poliomielitis2" id="poliomielitis2" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_poliomielitis2))?$control_poliomielitis2:'';?>"></td>
-                                                    <td><input type="date" name="poliomielitis3" id="poliomielitis3" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_poliomielitis3))?$control_poliomielitis3:'';?>"></td>
-                                                    <td><input type="date" name="neumococo1" id="neumococo1" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_neumococo1))?$control_neumococo1:null;?>"></td>
-                                                    <td><input type="date" name="neumococo2" id="neumococo2" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_neumococo2))?$control_neumococo2:null;?>"></td>
+                                                    <td><input type="date" name="poliomielitis2" id="poliomielitis2" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_poliomielitis2))?$control_poliomielitis2:;?>"></td>
+                                                    <td><input type="date" name="poliomielitis3" id="poliomielitis3" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_poliomielitis3))?$control_poliomielitis3:;?>"></td>
+                                                    <td><input type="date" name="neumococo1" id="neumococo1" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_neumococo1))?$control_neumococo1;?>"></td>
+                                                    <td><input type="date" name="neumococo2" id="neumococo2" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_neumococo2))?$control_neumococo2;?>"></td>
                                                 </tr>
                                                 <tr class="info">
                                                     <th>Neumococo 3</th>
@@ -199,10 +199,10 @@
                                                     <th>Varicela</th>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="date" name="neumococo3" id="neumococo3" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_neumococo3))?$control_neumococo3:'';?>"></td>
-                                                    <td><input type="date" name="SR" id="SR" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_SR))?$control_SR:'';?>"></td>
-                                                    <td><input type="date" name="SRP" id="SRP" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_SRP))?$control_SRP:'';?>"></td>
-                                                    <td><input type="date" name="varicela" id="varicela" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_varicela))?$control_varicela:'';?>"></td>
+                                                    <td><input type="date" name="neumococo3" id="neumococo3" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_neumococo3))?$control_neumococo3;?>"></td>
+                                                    <td><input type="date" name="SR" id="SR" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_SR))?$control_SR;?>"></td>
+                                                    <td><input type="date" name="SRP" id="SRP" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_SRP))?$control_SRP;?>"></td>
+                                                    <td><input type="date" name="varicela" id="varicela" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_varicela))?$control_varicela;?>"></td>
                                                 </tr>
                                                 <tr class="info">
                                                     <th>FA</th>
@@ -210,9 +210,9 @@
                                                     <th>Influenza</th>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="date" name="FA" id="FA" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_FA))?$control_FA:null;?>"></td>
-                                                    <td><input type="date" name="OPV" id="OPV" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_OPV))?$control_OPV:null;?>"></td>
-                                                    <td><input type="date" name="Influenza" id="Influenza" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_Influenza))?$control_Influenza:null;?>"></td>
+                                                    <td><input type="date" name="FA" id="FA" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_FA))?$control_FA;?>"></td>
+                                                    <td><input type="date" name="OPV" id="OPV" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_OPV))?$control_OPV;?>"></td>
+                                                    <td><input type="date" name="Influenza" id="Influenza" class="form-control" placeholder="Ingrese Fecha de Fin" value="<?php echo (isset($control_Influenza))?$control_Influenza;?>"></td>
                                                 </tr>
                                             </tbody>
                                         </table>
