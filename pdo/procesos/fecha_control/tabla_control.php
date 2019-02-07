@@ -155,19 +155,19 @@ if(isset($_GET['cedula'])){
     }
 
     if(isset($_POST['rotavirus2']) && $_POST['rotavirus2']=="1") {
-        //$actualizar_control->bindParam(":rotavirus2", NULL); // POST value
+        $actualizar_control->bindParam(":rotavirus2", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":rotavirus2", $_POST['rotavirus2']); // Base value
     }
 
     if(isset($_POST['pentavalente1']) && $_POST['pentavalente1']=="1") {
-        //$actualizar_control->bindParam(":pentavalente1", NULL); // POST value
+        $actualizar_control->bindParam(":pentavalente1", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":pentavalente1", $_POST['pentavalente1']); // Base value
     }
 
-    if(isset($_POST['pentavalente2']) && $_POST['pentavalente2']=="1") {
-        //$actualizar_control->bindParam(":pentavalente2", NULL); // POST value
+    if(isset($_POST['pentavalente2']) && $_POST['pentavalente2']=="0") {
+        $actualizar_control->bindParam(":pentavalente2", NULL); // POST value
     } else {
         $actualizar_control->bindParam(":pentavalente2", $_POST['pentavalente2']); // Base value
     }
